@@ -1,0 +1,772 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: .5s;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url(../font/Unbounded/Unbounded-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+a {
+    color: white;
+}
+
+
+
+.py {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: 500;
+}
+
+/* header */
+
+header {
+    background-color: #8EA991;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo p {
+    color: white;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user img {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 1px;
+}
+
+.user img:hover {
+    border: 2px solid white;
+}
+
+.burg { 
+    display: none; 
+} 
+ 
+#burger, [for=burger] { 
+    display: none; 
+} 
+
+/* banner */
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+span {
+    color: #8EA991;
+}
+
+.btn_banner {
+    background-color: #8EA991;
+    border-radius: 10px;
+    padding: 25px;
+    border: #8EA991 5px solid;
+    font-weight: 400;
+    font-size: 32px;
+    width: 80%;
+}
+
+.btn_banner:hover {
+    background-color: transparent;
+    color: #8EA991;
+}
+
+/* catalog */
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.catalog h2 {
+    text-align: right;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.tovars_catalog {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.one_tovar {
+    border: #8EA991 2px solid;
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    border-radius: 10px;
+}
+
+.one_tovar img {
+    border-radius: 10px 10px 0 0;
+}
+
+.tovar_text {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tovar_text h4 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.btn_tovar {
+    background: #8EA991;
+    border: #8EA991 3px solid;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.btn_tovar:hover {
+    background-color: transparent;
+    color: #8EA991;
+}
+
+/* form */
+
+.form_bac {
+    background: url(../media/form/form.png);
+    background-size: cover;
+    height: 90vh;
+    color: white;
+
+}
+
+.form_centr {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    width: 820px;
+    align-items: center;
+    
+}
+
+.form h3 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    gap: 30px;
+}
+
+form input {
+    border: none;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(217, 217, 217, 0.36);
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+form input::placeholder {
+    color: #C4C4C4;
+    font-family: 'Unbounded';
+}
+
+#submit {
+    background: #8EA991;
+    border: #8EA991 5px solid;
+    font-size: 28px;
+    font-family: 'Unbounded';
+}
+
+#submit:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+form p {
+    font-size: 16px;
+}
+
+/* footer */
+
+footer {
+    background-color: #8EA991;
+    color: white;
+    padding: 100px 0 50px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 16px;
+}
+
+.footer_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_footer a {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo_footer a:hover {
+    text-decoration: none;
+}
+
+.logo_footer a img {
+    width: 90px;
+}
+
+.logo_footer a p {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav a {
+    transition: .8s;
+}
+
+.nav a:hover, .contacts a:hover {
+    text-decoration: underline;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tel, .mail, .adr {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.mes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.end {
+    text-align: center;
+    font-size: 14px;
+}
+
+.end a img:hover {
+    filter: grayscale(1);
+}
+
+
+/* one_tovar_str */
+
+.tovar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.tovar img {
+    width: 500px;
+}
+
+.tovar_info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.tovar_info h3 {
+    font-size: 36px;
+    font-weight: 400;
+}
+.all_groups {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.group {
+    display: flex;
+    gap: 30px;
+}
+
+.btn_tovara {
+    border: #8EA991 5px solid;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 36px;
+    color: #8EA991;
+    font-weight: 400;
+}
+
+.btn_tovara:hover {
+    background-color: #8EA991;
+    color: white;
+}
+
+/* autorize */
+
+.autorize {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+
+.autorize h2 {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.autor {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.autor input {
+    border: none;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: black;
+    border-bottom: 3px solid #8EA991;
+}
+
+input:focus {
+    border: #8EA991 2px solid;
+}
+
+.autor input::placeholder {
+    color: #707070;
+    font-family: 'Unbounded';
+}
+
+ #vhod{
+    background: #8EA991;
+    border: #8EA991 3px solid;
+    font-size: 28px;
+    font-family: 'Unbounded';
+    color: white;
+    padding: 13px;
+}
+
+#vhod:hover {
+    background-color: transparent;
+    cursor: pointer;
+    color: #8EA991;
+}
+
+.href {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.href a {
+    color: #8EA991;
+}
+
+.href a:hover {
+    text-decoration: underline;
+}
+
+/* admin */
+
+.admin {
+    display: flex;
+}
+
+.left_panel {
+    width: 400px;
+    height: 90vh;
+    background-color: #5F5F5F;
+    padding:100px 50px 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.admin_info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 16px;
+}
+
+.fio, .panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin_info h3{
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+#exit {
+    text-align: right;
+}
+
+#exit:hover {
+    text-decoration: underline;
+}
+
+.right_panel {
+    padding-top: 100px;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.all_tovars {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add_tovar {
+    display: flex;
+    background-color: #D9D9D9;
+}
+
+.one_tovar_info, .add_tovar {
+    display: flex;
+    background-color: #D9D9D9;
+    padding: 20px;
+    align-items: center;
+    width: 950px;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.one_tovar_info a, .add_tovar a {
+    border-bottom: 1px solid transparent;
+}
+
+.one_tovar_info a:hover, .add_tovar a:hover {
+    border-bottom: 1px solid black;
+}
+
+.redact {
+    display: flex;
+    gap: 10px;
+}
+
+.right_panel h2 {
+    font-size: 32px;
+}
+
+.panel a:hover {
+    text-decoration: underline;
+}
+
+/* add */
+
+.nazad {
+    color: #8EA991;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.nazad:hover {
+    text-decoration: underline;
+}
+
+/* delete */
+
+.delete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+}
+
+.delete h2 {
+    font-weight: 400;
+    font-size: 32px;
+}
+
+#no {
+    color: #8EA991;
+    border: #8EA991 2px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 28px;
+}
+
+#yes {
+    background-color: #8EA991;
+    border: #8EA991 3px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 28px;
+}
+
+.yes_no {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 150px;
+}
+
+#no:hover {
+    background-color: #8EA991;
+    color: white;
+    text-decoration: underline;
+}
+
+#yes:hover {
+    background-color: #ffffff;
+    color: #8EA991;
+    text-decoration: underline;
+}
+
+#burger, [for=burger] {
+    display: none;
+}
+
+.nav2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    background-color: #8EA991;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 10000;
+    display: none;
+}
+
+@media screen and (max-width:860px) {
+
+    [for=burger] {
+        display: block;
+        color: white;
+    }
+
+    [for=burger]::before {
+        content: '≡';
+        font-size: 40px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .nav2 a {
+        margin-left: 50px;
+    }
+
+    #burger:checked + [for=burger] + .nav2 {
+        display: block;
+        display: flex;
+
+    }
+
+    #burger:checked + [for=burger]::before {
+        content: '×';
+        font-size: 40px;
+    }
+
+
+    .header {
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+
+    .container {
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+
+    .user{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .banner img {
+        width: 70%;
+    }
+
+    .one_tovar {
+        width: 40%;
+    }
+
+    .tovars_catalog {
+        justify-content: center;
+    }
+
+    .form h3 {
+        font-size: 32px;
+        width: 80%;
+    }
+
+    .form_bac {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.342)), url(../media/form/form1.png);
+        background-size: cover;
+    }
+
+    .form_centr {
+        width: 100%;
+    }
+
+    .footer_content {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .contacts {
+        text-align: center;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .mes {
+        flex-direction: row;
+    }
+
+    .tovar {
+        gap: 10;
+    }
+
+    .all_groups {
+        font-size: 16px;
+    }
+
+    .group {
+        align-items: center;
+        gap: 10px;
+    }
+
+    .admin {
+        padding: 0 0 90px;
+    }
+
+    .left_panel {
+        height: 1501px;
+    }
+
+    .right_panel {
+        width: 50%;
+    }
+
+    .add_tovar {
+        width: 100%;
+    }
+
+    .one_tovar_info{
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
